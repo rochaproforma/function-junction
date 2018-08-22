@@ -3,6 +3,13 @@
  * and returns the largest of them. Use the if-then-else
  * construct available in Javascript.
  */
+function max(firstNum, secondNum){
+  if (firstNum > secondNum) {
+     return firstNum
+  } else {
+    return secondNum
+}
+}
 
 // ...
 
@@ -10,6 +17,15 @@
  * Define a function maxOfThree() that takes three
  * numbers as arguments and returns the largest of them.
  */
+function maxOfThree(firstNum, secondNum, thirdNum) {
+  if ((firstNum >= secondNum) && (firstNum >= thirdNum)) { 
+      return firstNum;
+  } else if ((secondNum >= firstNum) && (secondNum >= thirdNum)) {
+      return secondNum;
+  } else {
+      return thirdNum;
+  }
+}
 
 // ...
 
@@ -17,16 +33,21 @@
  * Define a function sum() that takes two numbers as
  * arguments and computes the sum of those two numbers.
  */
-
-// ...
-
+function sum(num1, num2) {
+  return (num1 + num2);
+}
 /*
  * Define a function sumOfArray that calculates the sum of
  * all the numbers in an array.
- */
+ */ 
+int someArray[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+int sumOfArray = 0;
 
-// ...
+for (int i : someArray)
+    sum += i;
 
+    return sumOfArray;
+}
 /**
  * Write a function isVowel() that takes a character (i.e. a string of length 1)
  * and returns true if it is a vowel, false otherwise.
