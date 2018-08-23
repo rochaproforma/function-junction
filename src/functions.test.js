@@ -36,24 +36,35 @@ function maxOfThree(firstNum, secondNum, thirdNum) {
 function sum(num1, num2) {
   return (num1 + num2);
 }
+
 /*
  * Define a function sumOfArray that calculates the sum of
  * all the numbers in an array.
  */ 
-int someArray[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-int sumOfArray = 0;
 
-for (int i : someArray)
-    sum += i;
+function sumOfArray(array){
+  var total = 0,
+      len = array.length;
 
-    return sumOfArray;
-}
+  for (var i = 0; i < len; i++){
+    total += array[i];
+  }
+
+  return total;
+};
+
 /**
  * Write a function isVowel() that takes a character (i.e. a string of length 1)
  * and returns true if it is a vowel, false otherwise.
  */
 
-// ...
+function isVowel(c){
+  var vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'u', 'U'];
+
+  if(vowels.indexOf(c, 0) === -1) return false;
+  return true;
+
+}
 
  /**
   * Write a function rovarspraket() that will translate
@@ -64,7 +75,7 @@ for (int i : someArray)
   * return the string "tothohisos isos fofunon".
   */
 
-// ...
+
 
 /**
  * Define a function reverse() that computes
@@ -73,7 +84,14 @@ for (int i : someArray)
  * string "books".
  */
 
-// ...
+function reverse(str) {
+  var text = '';
+  
+  for (var i = str.length - 1; i >= 0; i--) {
+    text += str[i];
+  }
+  return text.toLowerCase();
+}
 
  /**
   * Write a function findLongestWord() that takes an
